@@ -1,0 +1,8 @@
+@host = http://127.0.0.1:8080
+@token = testtoken
+@apiver =  0.0.1
+
+### 客户端登陆测试接口
+### 輸入微信返回的code
+POST {{host}}/index HTTP/1.1
+content-type: application/json

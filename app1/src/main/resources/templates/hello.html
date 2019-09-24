@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8" />
+    <title>Welcome.app1</title>
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <link href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    </link>
+    <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    </link>
+</head>
+
+<body>
+    <p th:text="Hello！app1">UserName</p>
+    <p th:text="'token=' + ${cookie} ">UserName</p>
+    <a th:href="@{${link}}" th:text="${text}"></a>
+    <div id="sp"></div>
+</body>
+
+<script th:inline="javascript">
+    // onload = function() {
+    //     setInterval(go, 1000);
+    // };
+    // var x = 3;
+
+    // function go() {
+    //     x--;
+    //     if (x > 0) {
+    //         document.getElementById('sp').innerHTML = x;
+    //     } else {
+    //         var returnUrl = [
+    //             [$ {
+    //                 originalUrl
+    //             }]
+    //         ];
+    //         location.href = returnUrl;
+
+    //     }
+    // }
+</script>
+
+</html>
